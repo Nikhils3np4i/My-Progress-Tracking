@@ -46,6 +46,8 @@ h1{
 
 @media (max-width: 768px){
     .container{
+        position: relative;
+        top: 60px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
