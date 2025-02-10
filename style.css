@@ -3,8 +3,10 @@
     padding: 0;
 }
 
-h1{
-    text-align: center;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fullstack{
@@ -79,5 +81,69 @@ h1{
     .DSA p{
         position: relative;
         top: 50px;
+    }
+}
+
+
+
+@media (min-height: 466px){
+    .container{
+        position: relative;
+        top: 210px;
+    }
+}
+
+@media (min-height: 504px){
+    .container{
+        position: relative;
+        top: 190px;
+    }
+}
+
+
+@media (min-height: 568px){
+    .container{
+        position: relative;
+        top: 170px;
+    }
+}
+
+
+@media (min-height: 642px){
+    .container{
+        position: relative;
+        top: 150px;
+    }
+}
+
+
+@media (min-height: 704px){
+    .container{
+        position: relative;
+        top: 150px;
+    }
+}
+
+
+@media (min-height: 728px){
+    .container{
+        position: relative;
+        top: 130px;
+    }
+}
+
+
+@media (min-height: 787px){
+    .container{
+        position: relative;
+        top: 100px;
+    }
+}
+
+
+@media (min-height: 902px){
+    .container{
+        position: relative;
+        top: 60px;
     }
 }
