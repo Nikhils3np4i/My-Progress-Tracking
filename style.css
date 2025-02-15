@@ -1,174 +1,45 @@
-*{
+header{
     margin: 0;
     padding: 0;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fullstack{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 5vh;
     text-align: center;
-    cursor: pointer;
 }
-
 .container{
-    height: 90vh;
     display: flex;
-    justify-content: space-around;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
 }
-
-.container h3{
-    position: relative;
-    bottom: 150px;
-}
-
-.image{
-    width: 400px;
-    position: relative;
-    bottom: 100px;
+.fullstack{
+    max-width: 400px;
+    text-align: center;
 }
 
 .DSA{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 400px;
     text-align: center;
-    cursor: pointer;
 }
 
+.DSA > img{
+    width: 250px;
+}
 footer{
-    display: flex;
-    justify-content: center;
-    position: sticky;
+    height: 5vh;
+    text-align: center;
 }
 
-@media (max-width: 1073px){
-    .image{
-        width: 300px;
-    }
-}
 
-@media (max-width: 768px){
+@media(max-width: 1000px){
     .container{
-        position: relative;
-        top: 200px;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
+        gap: 2rem;
     }
-    
     .fullstack{
-        position: relative;
-        top: 10px;
-    } 
-
-
-    .fullstack p{
-        position: relative;
-        bottom: 70px;
+        margin-top: 20px;
     }
-
-    .image{
-        width: 300px;
-    }
-
-    .DSA > h3{
-        position: relative;
-        top: 10px;
-    }
-    .DSA > img{
-        position: relative;
-        top: 30px;
-    }
-    .DSA p{
-        position: relative;
-        top: 50px;
+    footer{
+        margin-top: 20px;
     }
 }
-
-
-
-@media (min-height: 466px){
-    .container{
-        position: relative;
-        top: 210px;
-    }
-}
-
-@media (min-height: 504px){
-    .container{
-        position: relative;
-        top: 190px;
-    }
-}
-
-
-@media (min-height: 568px){
-    .container{
-        position: relative;
-        top: 170px;
-    }
-}
-
-
-@media (min-height: 642px){
-    .container{
-        position: relative;
-        top: 150px;
-    }
-}
-
-
-@media (min-height: 704px){
-    .container{
-        position: relative;
-        top: 150px;
-    }
-}
-
-
-@media (min-height: 728px){
-    .container{
-        position: relative;
-        top: 130px;
-    }
-}
-
-
-@media (min-height: 787px){
-    .container{
-        position: relative;
-        top: 100px;
-    }
-}
-
-
-@media (min-height: 902px){
-    .container{
-        position: relative;
-        top: 60px;
-    }
-}
-
-
-@media (min-height: 950px){
-    .container{
-        position: relative;
-        top: 80px;
-    }
-}
-
-
-@media (min-height: 1080px){
-    .container{
-        position: relative;
-        top: 70px;
-    }
-}
-

@@ -10,10 +10,13 @@
             justify-content: center;
             align-items: center;
             height: 15vh;
+            text-align: center;
+            padding: 0 20px;
         }
         
         .horizontal-line{
-            width: 50%;
+            width: 90%;
+            max-width: 800px;
             border: 1px solid black;
         }
 
@@ -21,23 +24,55 @@
             display: flex;
             justify-content: center;
             margin-top: 50px;
+            padding: 0 20px;
+            overflow-x: auto;
+        }
 
+        table {
+            width: 100%;
+            max-width: 1000px;
+            border-collapse: collapse;
         }
-        main th{
-            padding: 25px;
+
+        main th, main td{
+            padding: 15px;
+            text-align: left;
+            min-width: 120px;
         }
-        main td{
-            padding: 25px;
-        }
+
         #back-btn{
-            position: absolute;
-            top: 50%;
+            position: fixed;
+            bottom: 20px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             padding: 10px 20px;
             border: 1px solid blueviolet;
             border-radius: 10px;
         }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            main th, main td {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            main th, main td {
+                padding: 8px;
+                font-size: 0.8rem;
+                min-width: 100px;
+            }
+        }
+
         #back-btn:hover{
             transition: all 0.2s ease-in-out;
             background-color: blueviolet;
