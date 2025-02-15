@@ -1,0 +1,6 @@
+Creating This site to track my progress everyday as i grow my coding skills.
+Also i'll keep giving dates and updates details
+
+12 February 2025 => Created the site (Without much CSS Knowledge)
+15 February 2025 => Updated the site (With good enough CSS Knowledge), also included the older CSS File to check the skill Improvement i made in 3 days...
+Will Update the other sections soon...
