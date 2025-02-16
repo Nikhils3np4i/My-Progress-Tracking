@@ -3,81 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Web Development</title>
+    <title>Data Structures and Algorithms</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+        *{
+            font-family: "Sono", serif;
+        }
         header{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 15vh;
             text-align: center;
-            padding: 0 20px;
         }
-        
         .horizontal-line{
-            width: 90%;
-            max-width: 800px;
-            border: 1px solid black;
+            width: 50%;
         }
-
-        main{
+        .container{
             display: flex;
             justify-content: center;
-            margin-top: 50px;
-            padding: 0 20px;
-            overflow-x: auto;
+            align-items: start;
+            height: 80vh;
+            gap: 30px;
         }
-
-        table {
-            width: 100%;
-            max-width: 1000px;
-            border-collapse: collapse;
+        .Topics{
+            margin-top: 30px;
+            max-width: 400px;
+            background: #f9f9f9;
+            padding: 12px;
+            text-align: center;
+            font-weight: 500;
+            border-radius: 4px;
         }
-
-        main th, main td{
-            padding: 15px;
-            text-align: left;
-            min-width: 120px;
+        .Topics > h3{
+            font-size: larger;
+            color: rgb(80, 175, 175);
         }
-
+        .insider{
+            margin-top: 40px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+        }
         #back-btn{
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
             padding: 10px 20px;
-            border: 1px solid blueviolet;
+            font-weight: 500;
             border-radius: 10px;
-        }
-
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            main th, main td {
-                padding: 10px;
-                font-size: 0.9rem;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            header h1 {
-                font-size: 1.2rem;
-            }
-
-            main th, main td {
-                padding: 8px;
-                font-size: 0.8rem;
-                min-width: 100px;
-            }
-        }
-
-        #back-btn:hover{
+            border: 1px solid blueviolet;
+            cursor: pointer;
             transition: all 0.2s ease-in-out;
-            background-color: blueviolet;
+        }
+        #back-btn:hover{
+            background: rgb(98, 15, 207);
             color: white;
         }
+        @media(max-width: 980px){
+            .container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                height: 100%;
+            }
+            .Topics{
+                margin-top: 20px;
+            }
+            .insider{
+                margin-top: 10px;
+            }
+            .button{
+                margin-top: 30px;
+                height: 100%;
+            }
+            #back-btn{
+                color: white;
+                background: rgb(98, 15, 207);
+            }
+            
+        }
+        
     </style>
 </head>
 <body>
@@ -88,34 +89,34 @@
     <hr class="horizontal-line">
     <!-- Table -->
      <main>
-     <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Topic</th>
-                <th>Time</th>
-                <th>Attendance</th>
-                <th>Problems Solved</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Feb 11, 2025</td>
-                <td>Recursion</td>
-                <td>2 Hours</td>
-                <td style="color: green;">Present</td>
-                <td style="color: blueviolet;">Print 1 to N without Loops (GFG)</td>
-            </tr>
-            <tr>
-                <td>Feb 12, 2025</td>
-                <td></td>
-                <td></td>
-                <td style="color: black;">Pending</td>
-            </tr>
-        </tbody>
-     </table>
+     <div class="container">
+            <div class="date Topics">
+                <h3>Date</h3>
+                <p id="date" class="insider">15 February 2025</p>  
+            </div>
+            <div class="time Topics">
+                <h3>Time</h3>
+                <p id="time" class="insider" >2 Hours</p>
+            </div>
+            <div class="topic Topics">
+                <h3>Topics Covered</h3>
+                <p id="topic" class="insider">Recursion and Backtracking Basics</p>
+            </div>
+            <div class="attendance Topics">
+                <h3>Attendance</h3>
+                <p id="attendance" class="insider">Present</p>
+            </div>
+            <div class="project Topics">
+                <h3>Problems Solved</h3>
+                <p id="project" class="insider">Print N to 1, Print 1 to N, using recursion and backtracking.</p>
+            </div>
+        </div>
+        <div class="button">
+            <button id="back-btn">Back</button>
+        </div>
+        
     </main>
-    <button id="back-btn" style="cursor: pointer;">Back</button>
+
 
     <script>
         const backBtn = document.getElementById('back-btn');
